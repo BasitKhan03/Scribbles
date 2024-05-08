@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee&display=swap");
+
+.display-6 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-txt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.note {
+  width: 85%;
+}
+
+.title {
+  background-color: #fafbfe;
+  border: none;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-left: 2px solid rgb(164, 106, 6);
+  padding-left: 15px;
+  color: #2f2f2f;
+}
+
+.title:focus {
+  background-color: #fafbfe;
+  outline: none;
+}
+
+.content {
+  resize: none;
+  background-color: #fafbfe;
+  border: none;
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-left: 2px solid rgb(164, 106, 6);
+  padding-left: 15px;
+  color: #2f2f2f;
+}
+
+.content:focus {
+  background-color: #fafbfe;
+  outline: none;
+}
+
+.tag {
+  background-color: #fafbfe;
+  border: none;
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-left: 2px solid rgb(164, 106, 6);
+  padding-left: 15px;
+  color: #7c0808;
+}
+
+.tag:focus {
+  background-color: #fafbfe;
+  outline: none;
+}
+
+.note-btn {
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(164, 106, 6, 0.9);
+  padding: 5px 27px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.note-btn:hover {
+  background-color: rgba(164, 106, 6, 0.8);
+}
+
+.add-note-section {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .add-note-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

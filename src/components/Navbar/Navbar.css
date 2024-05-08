@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar {
+  height: 74px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 10%;
+  background-color: #ffffff;
+  transition: all 0.6s;
+}
+
+.scroll-shadow {
+  box-shadow: 0px 2px 15px rgba(55, 55, 55, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logoHeading {
+  font-family: "Jersey 10", sans-serif;
+  color: #212529;
+  font-weight: 400;
+  font-style: normal;
+  display: inline;
+  font-size: 34px;
+  margin-left: -12px;
+  position: relative;
+  top: 2px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li,
+a,
+button {
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.headerBtn {
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(8, 141, 74);
+  padding: 5px 22px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-right: -60px;
+  position: relative;
+  top: -3px;
+}
+
+.headerBtn:hover {
+  background-color: rgb(8, 141, 74, 0.85);
+}
+
+.nav-links a {
+  color: rgb(41, 41, 41);
+  position: relative;
+  top: 12px;
+}
+
+.menu {
+  display: flex;
+  gap: 0.8em;
+}
+
+.menu li a:hover,
+.menu li a.active {
+  color: #150130;
+  text-decoration: underline;
+}
+
+.menu li {
+  padding: 5px 12px;
+  top: 4;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 25px;
+  background-color: rgb(200, 199, 199);
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 7px;
+  position: relative;
+  top: 7px;
+  left: 70px;
+  transform: scale(1.01);
+}
+
+.ball {
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  position: absolute;
+  top: 3.5px;
+  left: 4px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(25px);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  position: relative;
+  top: 6px;
+}
+
+.fa-moon {
+  color: rgb(255, 192, 203);
+}
+
+.fa-sun {
+  color: rgb(255, 255, 0);
+  font-size: 14px;
+}
+
+.login-form-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.92rem;
+}
+
+.login-form-input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.91rem;
+}
+
+.login-btn {
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(8, 141, 74);
+  padding: 8px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+.login-btn:hover {
+  background-color: rgb(8, 141, 74, 0.85);
+}
+
+/* #----| Responsive Design |----# */
+
+@media only screen and (max-width: 690px) {
+  .logoHeading {
+    font-size: 29px;
+  }
+
+  .menu li a {
+    font-size: 16px;
+  }
+
+  .headerBtn {
+    font-size: 14px;
+  }
+
+  .menu {
+    gap: 0.3em;
+  }
+
+  .mode {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar {
+    border: none;
+    box-shadow: 0px 2px 15px rgba(113, 113, 113, 0.4);
+  }
+
+  .logoHeading {
+    font-size: 29px;
+    margin-left: 2px;
+  }
+
+  .menu {
+    margin-top: 22px;
+    display: none;
+    position: absolute;
+    background-color: #edf0f1;
+    color: black;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    height: 100vh;
+    z-index: -20;
+  }
+
+  .headerBtn {
+    position: relative;
+    top: 0px;
+    left: -29px;
+    font-size: 15px;
+  }
+
+  .menu li a {
+    font-size: 17px;
+  }
+
+  .menu li:hover,
+  .menu li a.active {
+    color: #0a5163;
+    text-decoration: underline;
+  }
+
+  .menu li + li {
+    margin-top: 20px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 23px;
+  }
+
+  .label {
+    margin: 0px auto;
+    position: relative;
+    top: 28px;
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .logoHeading {
+    font-size: 27px;
+  }
+
+  .menu li a {
+    font-size: 16px;
+  }
+
+  .headerBtn {
+    font-size: 14px;
+  }
+
+  .menu {
+    gap: 0.3em;
+  }
+
+  .mode {
+    margin-right: 20px;
+  }
+
+  .hamburger {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .logoHeading {
+    font-size: 26px;
+  }
+
+  .menu li a {
+    font-size: 16px;
+  }
+
+  .headerBtn {
+    font-size: 14px;
+  }
+
+  .menu {
+    gap: 0.3em;
+  }
+
+  .mode {
+    margin-right: 20px;
+  }
+
+  .hamburger {
+    font-size: 20px;
+  }
+}

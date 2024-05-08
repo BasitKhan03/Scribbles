@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee&display=swap");
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.display-6 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h2 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(164, 106, 6);
+}
+
+.main-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.about-row {
+  padding-left: 28px;
+  padding-right: 15px;
+}
+
+.last-row {
+  margin-top: 25px;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+}
+
+.pos {
+  position: relative;
+  top: -50px;
+}
+
+/* #----| Responsive Design |----# */
+
+@media only screen and (max-width: 1400px) {
+  .pos {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .pos {
+    position: relative;
+    top: -25px;
+  }
+}

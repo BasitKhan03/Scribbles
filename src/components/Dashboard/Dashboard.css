@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee&display=swap");
+
+.display-6 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.display-7 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(164, 106, 6);
+}
+
+.main-txt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.sub-txt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
+  position: relative;
+  top: 2px;
+}
+
+.your-note-section {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.modal-title {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+.close-btn {
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 1.0525rem;
+  font-weight: 500;
+  padding: 5px 20px;
+}
+
+.save-btn {
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(164, 106, 6, 0.9);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.save-btn:hover {
+  background-color: rgba(164, 106, 6, 0.8);
+}
+
+.etitle {
+  background-color: #ffffff;
+  border: none;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-left: 2px solid rgb(164, 106, 6);
+  border-right: 2px solid rgb(164, 106, 6);
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #2d2d2d;
+}
+
+.etitle:focus {
+  background-color: #ffffff;
+  outline: none;
+}
+
+.econtent {
+  resize: none;
+  background-color: #ffffff;
+  border: none;
+  width: 100%;
+  font-size: 0.87rem;
+  font-weight: 400;
+  border-left: 2px solid rgb(164, 106, 6);
+  border-right: 2px solid rgb(164, 106, 6);
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #2d2d2d;
+}
+
+.econtent:focus {
+  background-color: #ffffff;
+  outline: none;
+}
+
+.etag {
+  background-color: #ffffff;
+  border: none;
+  width: 100%;
+  font-size: 0.85rem;
+  font-weight: 400;
+  border-left: 2px solid rgb(164, 106, 6);
+  border-right: 2px solid rgb(164, 106, 6);
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #7c0808;
+}
+
+.etag:focus {
+  background-color: #ffffff;
+  outline: none;
+}
+
+.del-modal-body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.del-btn {
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(164, 59, 6, 0.9);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.del-btn:hover {
+  background-color: rgba(164, 59, 6, 0.8);
+}
+
+@media only screen and (max-width: 576px) {
+  .your-note-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

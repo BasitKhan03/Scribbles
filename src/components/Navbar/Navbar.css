@@ -130,7 +130,7 @@ a.active {
 }
 
 @media (min-width: 992px) {
-  a::before {
+  li.nav-item a::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -143,8 +143,8 @@ a.active {
     transition: 0.3s ease-in-out;
   }
 
-  a:hover::before,
-  a.active::before {
+  li.nav-item a:hover::before,
+  li.nav-item a.active::before {
     width: 98%;
     visibility: visible;
   }

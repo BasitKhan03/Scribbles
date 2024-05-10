@@ -12,6 +12,10 @@ const Features = () => {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="container px-4 py-5" id="hanging-icons">

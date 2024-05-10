@@ -11,6 +11,10 @@ const Home = () => {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="container pt-3 pb-3 home">

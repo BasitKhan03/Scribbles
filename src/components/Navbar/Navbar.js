@@ -209,55 +209,70 @@ const Navbar = (props) => {
         </div>
       </div>
 
-      <header>
-        <nav className={`navbar ${navbar ? "scroll-shadow" : ""}`}>
-          <Link to="/">
-            <div className="logo">
-              <div className="logo-text-div">
-                <h1 className="logoHeading">Scribbles</h1>
-              </div>
+      <nav class={`navbar navbar-expand-lg ${navbar ? "scroll-shadow" : ""}`}>
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">
+            Scribbles
+          </a>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Scribbles
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-          </Link>
-
-          <ul className="nav-links">
-            <input type="checkbox" id="checkbox_toggle" />
-            <label htmlFor="checkbox_toggle" className="hamburger">
-              &#9776;
-            </label>
-            <div className="menu">
-              <li>
-                <NavLink activeClassName="active" to="/">
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink activeClassName="active" to="/features">
-                  Features
-                </NavLink>
-              </li>
-              <li>
-                <NavLink activeClassName="active" to="/about">
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <Link>Contact</Link>
-              </li>
-              <li>
-                <Link className="cta">
-                  <button
-                    className="headerBtn"
-                    data-bs-toggle="modal"
-                    data-bs-target="#loginModal"
-                  >
-                    Login
-                  </button>
-                </Link>
-              </li>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item nav-link mx-lg-2">
+                  <NavLink activeClassName="active" to="/">
+                    Home
+                  </NavLink>
+                </li>
+                <li class="nav-item nav-link mx-lg-2">
+                  <NavLink activeClassName="active" to="/features">
+                    Features
+                  </NavLink>
+                </li>
+                <li class="nav-item nav-link mx-lg-2">
+                  <NavLink activeClassName="active" to="/about">
+                    About
+                  </NavLink>
+                </li>
+                <li class="nav-item nav-link mx-lg-2">
+                  <Link>Contact</Link>
+                </li>
+              </ul>
             </div>
-          </ul>
-        </nav>
-      </header>
+          </div>
+          <button
+            className="ms-3 login-button"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            Login
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
     </>
   );
 };

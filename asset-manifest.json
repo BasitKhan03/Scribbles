@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Scribbles/static/css/main.09f3a625.css",
-    "main.js": "/Scribbles/static/js/main.09c41e98.js",
+    "main.css": "/Scribbles/static/css/main.2f9d6ceb.css",
+    "main.js": "/Scribbles/static/js/main.1d6990e4.js",
     "static/js/453.ed3810f9.chunk.js": "/Scribbles/static/js/453.ed3810f9.chunk.js",
     "static/media/no-notes.png": "/Scribbles/static/media/no-notes.255df0bade36a5750e63.png",
     "static/media/beautiful-landscape.png": "/Scribbles/static/media/beautiful-landscape.7f96a3c7f204c89d310a.png",
@@ -14,12 +14,12 @@
     "static/media/cross-platform.png": "/Scribbles/static/media/cross-platform.c02f7a63c8758c946af8.png",
     "static/media/writing.png": "/Scribbles/static/media/writing.c4a500bfb68ba79e56a1.png",
     "index.html": "/Scribbles/index.html",
-    "main.09f3a625.css.map": "/Scribbles/static/css/main.09f3a625.css.map",
-    "main.09c41e98.js.map": "/Scribbles/static/js/main.09c41e98.js.map",
+    "main.2f9d6ceb.css.map": "/Scribbles/static/css/main.2f9d6ceb.css.map",
+    "main.1d6990e4.js.map": "/Scribbles/static/js/main.1d6990e4.js.map",
     "453.ed3810f9.chunk.js.map": "/Scribbles/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.09f3a625.css",
-    "static/js/main.09c41e98.js"
+    "static/css/main.2f9d6ceb.css",
+    "static/js/main.1d6990e4.js"
   ]
 }

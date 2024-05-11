@@ -123,7 +123,7 @@ const Navbar = (props) => {
               <div className="d-flex justify-content-center mb-3 mb-sm-2">
                 <PuffLoader
                   color={"rgb(164, 106, 6)"}
-                  loading={!loading}
+                  loading={loading}
                   size={30}
                   aria-label="Loading Spinner"
                   data-testid="loader"

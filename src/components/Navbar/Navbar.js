@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import PuffLoader from "react-spinners/PuffLoader";
 import "./Navbar.css";
@@ -19,6 +19,7 @@ const Navbar = (props) => {
   } = props;
 
   const [navbar, setNavbar] = useState(false);
+  const ref = useRef(null);
 
   const onScroll = () => {
     if (window.scrollY >= 50) {
@@ -47,6 +48,12 @@ const Navbar = (props) => {
     setPasswordErr(false);
     setInvalid(false);
     setCredentials({ email: "", password: "" });
+  };
+
+  const handleClick = () => {
+    setTimeout(() => {
+      ref.current.click();
+    }, 300);
   };
 
   return (
@@ -229,22 +236,35 @@ const Navbar = (props) => {
                 class="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
+                ref={ref}
               ></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item nav-link mx-lg-2">
-                  <NavLink activeClassName="active" to="/">
+                  <NavLink
+                    activeClassName="active"
+                    to="/"
+                    onClick={handleClick}
+                  >
                     Home
                   </NavLink>
                 </li>
                 <li class="nav-item nav-link mx-lg-2">
-                  <NavLink activeClassName="active" to="/features">
+                  <NavLink
+                    activeClassName="active"
+                    to="/features"
+                    onClick={handleClick}
+                  >
                     Features
                   </NavLink>
                 </li>
                 <li class="nav-item nav-link mx-lg-2">
-                  <NavLink activeClassName="active" to="/about">
+                  <NavLink
+                    activeClassName="active"
+                    to="/about"
+                    onClick={handleClick}
+                  >
                     About
                   </NavLink>
                 </li>

@@ -53,7 +53,7 @@ const Navbar = (props) => {
   const handleClick = () => {
     setTimeout(() => {
       ref.current.click();
-    }, 300);
+    }, 200);
   };
 
   return (

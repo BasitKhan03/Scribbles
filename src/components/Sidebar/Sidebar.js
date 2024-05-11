@@ -63,10 +63,10 @@ const Sidebar = () => {
           </li>
         </ul>
         <div className="sidebar-footer pb-3">
-          <a className="sidebar-link" onClick={handleLogout}>
+          <Link className="sidebar-link" onClick={handleLogout}>
             <i className="lni lni-exit"></i>
             <span>Logout</span>
-          </a>
+          </Link>
         </div>
       </aside>
     </>

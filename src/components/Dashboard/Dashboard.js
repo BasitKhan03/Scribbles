@@ -80,7 +80,7 @@ const Dashboard = (props) => {
         if (err) {
           props.showAlert("Server Timed Out. Try Again!", "danger");
         } else {
-          props.showAlert("Note has been edited Successfully!", "success");
+          props.showAlert("Note has been edited successfully!", "success");
         }
       }, 2000);
     }
@@ -93,7 +93,7 @@ const Dashboard = (props) => {
     if (err) {
       props.showAlert("Server Timed Out. Try Again!", "danger");
     } else {
-      props.showAlert("Note has been deleted Successfully!", "success");
+      props.showAlert("Note has been deleted successfully!", "success");
     }
   };
 
@@ -120,7 +120,7 @@ const Dashboard = (props) => {
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >
-            <div className="modal-dialog">
+            <div className="modal-dialog modal-dialog-centered">
               <div className="modal-content">
                 <div className="modal-header px-4">
                   <h1 className="modal-title" id="exampleModalLabel">

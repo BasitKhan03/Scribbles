@@ -39,7 +39,7 @@ const AddNote = (props) => {
         if (err) {
           props.showAlert("Server Timed Out. Try Again!", "danger");
         } else {
-          props.showAlert("Note has been added Successfully!", "success");
+          props.showAlert("Note has been added successfully!", "success");
         }
       }, 3000);
     }
@@ -64,7 +64,7 @@ const AddNote = (props) => {
             <form action="#">
               <div className="mb-4 d-flex align-items-center">
                 {titleErr && (
-                  <div className="me-3">
+                  <div className="me-2 me-sm-3">
                     <i
                       className="lni lni-cross-circle"
                       style={{ color: "red" }}
@@ -85,7 +85,7 @@ const AddNote = (props) => {
               </div>
               <div className="mb-4 d-flex align-items-center">
                 {descriptionErr && (
-                  <div className="me-3">
+                  <div className="me-2 me-sm-3">
                     <i
                       className="lni lni-cross-circle"
                       style={{ color: "red" }}

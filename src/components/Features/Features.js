@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import {  Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Features.css";
 import "./Style.css";
 
@@ -51,7 +51,7 @@ const Features = () => {
               </p>
               <Link to="/" className="feature-btn">
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col d-flex align-items-start mt-5">
@@ -69,7 +69,7 @@ const Features = () => {
               </p>
               <Link to="/" className="feature-btn">
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col d-flex align-items-start mt-5">
@@ -87,7 +87,7 @@ const Features = () => {
               </p>
               <Link to="/" className="feature-btn">
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col d-flex align-items-start mt-5">
@@ -105,7 +105,7 @@ const Features = () => {
               </p>
               <Link to="/" className="feature-btn">
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col d-flex align-items-start mt-5">
@@ -127,7 +127,7 @@ const Features = () => {
               </p>
               <Link to="/" className="feature-btn">
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col d-flex align-items-start mt-5">
@@ -149,7 +149,7 @@ const Features = () => {
               </p>
               <Link to="/" className="feature-btn">
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
         </div>

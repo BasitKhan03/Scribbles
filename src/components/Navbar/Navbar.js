@@ -93,7 +93,12 @@ const Navbar = (props) => {
                   data-bs-dismiss="modal"
                   aria-label="Close"
                   ref={props.refClose}
-                  style={{ position: "relative", left: "165px", top: "-8px" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    position: "absolute",
+                    top: "19px",
+                    right: "19px",
+                  }}
                 ></button>
               </div>
 
@@ -116,18 +121,16 @@ const Navbar = (props) => {
               )}
 
               <div className="d-flex justify-content-center mb-2">
-                <div style={{ position: "relative", left: "-8px" }}>
-                  <PuffLoader
-                    color={"rgb(164, 106, 6)"}
-                    loading={loading}
-                    size={30}
-                    aria-label="Loading Spinner"
-                    data-testid="loader"
-                  />
-                </div>
+                <PuffLoader
+                  color={"rgb(164, 106, 6)"}
+                  loading={loading}
+                  size={30}
+                  aria-label="Loading Spinner"
+                  data-testid="loader"
+                />
               </div>
 
-              <div className="mt-2 mb-3 px-4">
+              <div className="mt-2 mb-3 px-3 px-sm-4">
                 <form onSubmit={props.handleLogin}>
                   <div className="mb-3">
                     <div className="d-flex">
@@ -216,32 +219,34 @@ const Navbar = (props) => {
         </div>
       </div>
 
-      <nav class={`navbar navbar-expand-lg ${navbar ? "scroll-shadow" : ""}`}>
-        <div class="container-fluid">
-          <Link class="navbar-brand me-auto" to="/">
+      <nav
+        className={`navbar navbar-expand-lg ${navbar ? "scroll-shadow" : ""}`}
+      >
+        <div className="container-fluid">
+          <Link className="navbar-brand me-auto" to="/">
             Scribbles
           </Link>
           <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
+            className="offcanvas offcanvas-end"
+            tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <div className="offcanvas-header">
+              <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                 Scribbles
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
                 ref={ref}
               ></button>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item nav-link mx-lg-2">
+            <div className="offcanvas-body">
+              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li className="nav-item nav-link mx-lg-2">
                   <NavLink
                     activeClassName="active"
                     to="/"
@@ -250,7 +255,7 @@ const Navbar = (props) => {
                     Home
                   </NavLink>
                 </li>
-                <li class="nav-item nav-link mx-lg-2">
+                <li className="nav-item nav-link mx-lg-2">
                   <NavLink
                     activeClassName="active"
                     to="/features"
@@ -259,7 +264,7 @@ const Navbar = (props) => {
                     Features
                   </NavLink>
                 </li>
-                <li class="nav-item nav-link mx-lg-2">
+                <li className="nav-item nav-link mx-lg-2">
                   <NavLink
                     activeClassName="active"
                     to="/about"
@@ -268,7 +273,7 @@ const Navbar = (props) => {
                     About
                   </NavLink>
                 </li>
-                <li class="nav-item nav-link mx-lg-2">
+                <li className="nav-item nav-link mx-lg-2">
                   <Link>Contact</Link>
                 </li>
               </ul>
@@ -282,14 +287,14 @@ const Navbar = (props) => {
             Login
           </button>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
         </div>
       </nav>

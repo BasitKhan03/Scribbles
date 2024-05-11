@@ -43,8 +43,8 @@
 
 .offcanvas-header,
 .offcanvas-body {
-  padding-left: 28px;
-  padding-right: 22px;
+  padding-left: 30px;
+  padding-right: 24px;
 }
 
 .login-button {
@@ -132,6 +132,10 @@ a.active {
   background-color: rgb(8, 141, 74, 0.85);
 }
 
+.login-btn:active {
+  background-color: rgb(8, 141, 74) !important;
+}
+
 @media (min-width: 992px) {
   li.nav-item a::before {
     content: "";
@@ -197,5 +201,10 @@ a.active {
 
   .login-button {
     font-size: 0.98rem;
+  }
+
+  .nav-link,
+  a {
+    padding-bottom: 12px;
   }
 }

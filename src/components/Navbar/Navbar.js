@@ -69,7 +69,7 @@ const Navbar = (props) => {
           <div className="modal-content">
             <div className="modal-body">
               <div
-                className="mb-2"
+                className="mb-1 mb-sm-2"
                 style={{
                   width: "100%",
                   display: "flex",
@@ -120,10 +120,10 @@ const Navbar = (props) => {
                 </div>
               )}
 
-              <div className="d-flex justify-content-center mb-2">
+              <div className="d-flex justify-content-center mb-3 mb-sm-2">
                 <PuffLoader
                   color={"rgb(164, 106, 6)"}
-                  loading={loading}
+                  loading={!loading}
                   size={30}
                   aria-label="Loading Spinner"
                   data-testid="loader"

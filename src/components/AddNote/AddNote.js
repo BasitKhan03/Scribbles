@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./AddNote.css";
 import PuffLoader from "react-spinners/PuffLoader";
 import Alert from "../Alert/Alert";
@@ -12,6 +12,10 @@ const AddNote = (props) => {
   const [titleErr, setTitleErr] = useState(false);
   const [descriptionErr, setDescriptionErr] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    document.title = "Add Note | Scribbles";
+  }, []);
 
   const onChange = (e) => {
     setNote({ ...note, [e.target.name]: e.target.value });

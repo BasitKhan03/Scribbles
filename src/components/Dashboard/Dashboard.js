@@ -28,6 +28,7 @@ const Dashboard = (props) => {
   useEffect(() => {
     getNotes();
     getUser();
+    document.title = "Dashboard | Scribbles";
   }, []);
 
   useEffect(() => {

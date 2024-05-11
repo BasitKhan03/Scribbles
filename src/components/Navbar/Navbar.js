@@ -211,9 +211,9 @@ const Navbar = (props) => {
 
       <nav class={`navbar navbar-expand-lg ${navbar ? "scroll-shadow" : ""}`}>
         <div class="container-fluid">
-          <a class="navbar-brand me-auto" href="#">
+          <Link class="navbar-brand me-auto" to="/">
             Scribbles
-          </a>
+          </Link>
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"

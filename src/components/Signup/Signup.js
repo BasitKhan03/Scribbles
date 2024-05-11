@@ -26,6 +26,10 @@ const Signup = () => {
     }
   }, []);
 
+  useEffect(() => {
+    document.title = "Signup | Scribbles";
+  }, []);
+
   const onChange = (e) => {
     setDetails({ ...details, [e.target.name]: e.target.value });
   };

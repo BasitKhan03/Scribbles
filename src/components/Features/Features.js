@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import {  Link, useNavigate } from "react-router-dom";
 import "./Features.css";
 import "./Style.css";
 
@@ -49,7 +49,7 @@ const Features = () => {
                 formatting options at your fingertips, creating beautifully
                 structured notes has never been easier.
               </p>
-              <a href="/" className="feature-btn">
+              <Link to="/" className="feature-btn">
                 Learn more
               </a>
             </div>
@@ -67,7 +67,7 @@ const Features = () => {
                 tablet, or smartphone, your notes are just a click away,
                 ensuring you never miss a beat.
               </p>
-              <a href="/" className="feature-btn">
+              <Link to="/" className="feature-btn">
                 Learn more
               </a>
             </div>
@@ -85,7 +85,7 @@ const Features = () => {
                 Scribbles empowers you to organize your notes with precision and
                 ease.
               </p>
-              <a href="/" className="feature-btn">
+              <Link to="/" className="feature-btn">
                 Learn more
               </a>
             </div>
@@ -103,7 +103,7 @@ const Features = () => {
                 filters and sorting options, finding that elusive idea has never
                 been simpler.
               </p>
-              <a href="/" className="feature-btn">
+              <Link to="/" className="feature-btn">
                 Learn more
               </a>
             </div>
@@ -125,7 +125,7 @@ const Features = () => {
                 Whether you're at home, in the office, or on the go, your notes
                 are right there with you.
               </p>
-              <a href="/" className="feature-btn">
+              <Link to="/" className="feature-btn">
                 Learn more
               </a>
             </div>
@@ -147,7 +147,7 @@ const Features = () => {
                 unauthorized access. Rest easy knowing that your ideas are
                 protected, always.
               </p>
-              <a href="/" className="feature-btn">
+              <Link to="/" className="feature-btn">
                 Learn more
               </a>
             </div>

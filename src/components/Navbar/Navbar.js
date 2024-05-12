@@ -16,6 +16,7 @@ const Navbar = (props) => {
     msg,
     setMsg,
     loading,
+    setLoading,
   } = props;
 
   const [navbar, setNavbar] = useState(false);
@@ -48,6 +49,7 @@ const Navbar = (props) => {
     setPasswordErr(false);
     setInvalid(false);
     setCredentials({ email: "", password: "" });
+    setLoading(false);
   };
 
   const handleClick = () => {

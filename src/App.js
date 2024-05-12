@@ -101,6 +101,7 @@ function App() {
             setMsg={setMsg}
             refClose={refClose}
             loading={loading}
+            setLoading={setLoading}
           />
         )}
 

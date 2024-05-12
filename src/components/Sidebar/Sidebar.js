@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Sidebar.css";
 
 const Sidebar = () => {
   const [expand, setExpand] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 576);
-
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
@@ -26,7 +24,6 @@ const Sidebar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    navigate("/");
   };
 
   return (
@@ -63,7 +60,7 @@ const Sidebar = () => {
           </li>
         </ul>
         <div className="sidebar-footer pb-3">
-          <Link className="sidebar-link" onClick={handleLogout}>
+          <Link to="/" className="sidebar-link" onClick={handleLogout}>
             <i className="lni lni-exit"></i>
             <span>Logout</span>
           </Link>

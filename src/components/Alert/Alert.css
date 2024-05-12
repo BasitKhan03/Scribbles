@@ -154,13 +154,13 @@
 
 @media only screen and (max-width: 425px) {
   .alert {
-    font-size: 12px;
+    font-size: 13px;
     padding: 0.6rem 2.2rem;
     padding-top: 0.6rem;
   }
 
   .alertIcon {
-    font-size: 13px;
+    font-size: 14px;
     position: relative;
     top: 2px;
     margin-right: 4px;

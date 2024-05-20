@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import PuffLoader from "react-spinners/PuffLoader";
 import Note from "../Note/Note";
@@ -25,9 +26,18 @@ const Dashboard = (props) => {
   const refDel = useRef(null);
   const refDelClose = useRef(null);
 
+  const navigate = useNavigate();
+
   useEffect(() => {
-    getNotes();
-    getUser();
+    if (!localStorage.getItem("token")) {
+      navigate("/");
+    } else {
+      getNotes();
+      getUser();
+    }
+  }, []);
+
+  useEffect(() => {
     document.title = "Dashboard | Scribbles";
   }, []);
 

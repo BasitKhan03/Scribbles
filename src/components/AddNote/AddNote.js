@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import "./AddNote.css";
 import PuffLoader from "react-spinners/PuffLoader";
 import Alert from "../Alert/Alert";
@@ -12,6 +13,14 @@ const AddNote = (props) => {
   const [titleErr, setTitleErr] = useState(false);
   const [descriptionErr, setDescriptionErr] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!localStorage.getItem("token")) {
+      navigate("/");
+    }
+  }, []);
 
   useEffect(() => {
     document.title = "Add Note | Scribbles";

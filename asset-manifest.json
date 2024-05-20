@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Scribbles/static/css/main.9b09e96f.css",
-    "main.js": "/Scribbles/static/js/main.9461f47c.js",
+    "main.js": "/Scribbles/static/js/main.226f8eee.js",
     "static/js/453.ed3810f9.chunk.js": "/Scribbles/static/js/453.ed3810f9.chunk.js",
     "static/media/no-notes.png": "/Scribbles/static/media/no-notes.255df0bade36a5750e63.png",
     "static/media/beautiful-landscape.png": "/Scribbles/static/media/beautiful-landscape.7f96a3c7f204c89d310a.png",
@@ -15,11 +15,11 @@
     "static/media/writing.png": "/Scribbles/static/media/writing.c4a500bfb68ba79e56a1.png",
     "index.html": "/Scribbles/index.html",
     "main.9b09e96f.css.map": "/Scribbles/static/css/main.9b09e96f.css.map",
-    "main.9461f47c.js.map": "/Scribbles/static/js/main.9461f47c.js.map",
+    "main.226f8eee.js.map": "/Scribbles/static/js/main.226f8eee.js.map",
     "453.ed3810f9.chunk.js.map": "/Scribbles/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9b09e96f.css",
-    "static/js/main.9461f47c.js"
+    "static/js/main.226f8eee.js"
   ]
 }
